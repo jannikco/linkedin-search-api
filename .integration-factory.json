@@ -5,7 +5,7 @@
   "releaseEligible": true,
   "maintainer": "jannikco",
   "license": "MIT",
-  "sourceRevision": "4268f2728b75e5b658bbf4568c6968b34f9e6084d7ebb999182c94322e35dec4",
+  "sourceRevision": "9e8c2ffc04542ad80b6aa91967dacf91993d6b38999db9c83c4f138d1d1e523a",
   "evidence": [
     "Pinned public OpenAPI contract",
     "tests/leadadapter.test.mjs"
@@ -17,7 +17,7 @@
   "kind": "leadadapter-recipe",
   "product": "leadadapter",
   "title": "LinkedIn people and post search",
-  "description": "Build asynchronous people and post search requests with explicit idempotency.",
+  "description": "Find relevant LinkedIn people and posts through LeadAdapter. API examples, coding-agent skills and a reviewed research-to-CRM workflow.",
   "operationIds": [
     "search_post",
     "search_posts_post"
@@ -26,7 +26,7 @@
   "qualityVersion": 2,
   "artifactType": "workflow",
   "utility": {
-    "problem": "Build asynchronous people and post search requests with explicit idempotency.",
+    "problem": "Find relevant LinkedIn people and posts through LeadAdapter. API examples, coding-agent skills and a reviewed research-to-CRM workflow.",
     "output": "Authenticated LeadAdapter results, review reports and resumable research-to-CRM workflows"
   },
   "capabilityEvidence": {
@@ -63,7 +63,7 @@
     }
   },
   "agentReady": true,
-  "version": "0.2.0",
+  "version": "0.2.1",
   "executionAuthority": "leadadapter-api",
   "factory": "leadadapter-pipmcp",
   "generatorVersion": 1

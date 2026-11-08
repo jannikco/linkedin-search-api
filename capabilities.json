@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "linkedin-search-api",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "product": "leadadapter",
   "credential": "LEADADAPTER_API_KEY",
   "executionAuthority": "https://leadadapter.com/api/v1",

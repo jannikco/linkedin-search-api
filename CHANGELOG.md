@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.2.0
+## 0.2.1
 
 Add ergonomic SDK resources, source-bound research-to-CRM workflows, resumable checkpoints and explicit mutation approval.
 

@@ -1,7 +1,7 @@
 {
   "name": "linkedin-search-api",
-  "version": "0.2.0",
-  "description": "Build asynchronous people and post search requests with explicit idempotency.",
+  "version": "0.2.1",
+  "description": "Find relevant LinkedIn people and posts through LeadAdapter. API examples, coding-agent skills and a reviewed research-to-CRM workflow.",
   "type": "module",
   "private": false,
   "license": "MIT",
@@ -9,8 +9,11 @@
     "node": ">=22"
   },
   "scripts": {
-    "test": "node --test",
-    "start": "node example.mjs"
+    "test": "node --test && node --test demo/demo.test.mjs",
+    "start": "node example.mjs",
+    "demo": "node demo/run.mjs",
+    "preflight": "node demo/run.mjs --preflight",
+    "verify:read": "node demo/run.mjs --live-read"
   },
   "exports": {
     ".": {
@@ -32,6 +35,7 @@
     "LICENSE",
     "capabilities.json",
     "docs",
-    "examples"
+    "examples",
+    "demo"
   ]
 }

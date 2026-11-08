@@ -1,0 +1,49 @@
+{
+  "id": "icp-people-search",
+  "repositoryId": "linkedin-search-api",
+  "product": "leadadapter",
+  "connectorId": "linkedin",
+  "title": "Find people who match your ICP",
+  "promise": "Filter a source-linked research result by an explicit target segment.",
+  "sourceRevision": "9e8c2ffc04542ad80b6aa91967dacf91993d6b38999db9c83c4f138d1d1e523a",
+  "credential": "LEADADAPTER_API_KEY",
+  "transport": "leadadapter-rest",
+  "sourceRefs": [
+    "https://leadadapter.com/docs/api-reference?lang=en"
+  ],
+  "readTask": {
+    "intent": "Filter a source-linked research result by an explicit target segment.",
+    "requiredCapability": "Read-only authorized account data; discover actual names and schemas first"
+  },
+  "synthetic": {
+    "strategy": "equals",
+    "field": "segment",
+    "value": "b2b-software",
+    "records": [
+      {
+        "id": "synthetic-profile-a",
+        "segment": "b2b-software",
+        "urn": "urn:li:fsd_profile:synthetic-a"
+      },
+      {
+        "id": "synthetic-profile-b",
+        "segment": "consumer-retail",
+        "urn": "urn:li:fsd_profile:synthetic-b"
+      }
+    ],
+    "input": {
+      "limit": 10
+    },
+    "normalization": "Invented normalized review fields demonstrate task logic; live provider schemas and field mappings must be reviewed separately.",
+    "expectedReviewCount": 1,
+    "asOf": "2026-11-08T00:00:00Z"
+  },
+  "livePolicy": {
+    "default": "preflight-only",
+    "explicitReadSelectionRequired": true,
+    "providerWritesAllowed": false,
+    "sandboxWritesRequireSeparateApproval": true
+  },
+  "baseSourceRevision": "4268f2728b75e5b658bbf4568c6968b34f9e6084d7ebb999182c94322e35dec4",
+  "releaseVersion": "0.2.1"
+}

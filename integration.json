@@ -5,7 +5,7 @@
   "releaseEligible": true,
   "maintainer": "jannikco",
   "license": "MIT",
-  "sourceRevision": "ea33908e4d5e10508739f28e11abf708e11f3117f1108b904229eeeb00079e55",
+  "sourceRevision": "d67654d55aadcdfc640f1769f60d0ec9ba130f1e37c795e1b048d1b020ea74bd",
   "evidence": [
     "Pinned public OpenAPI contract",
     "tests/leadadapter.test.mjs"
@@ -27,7 +27,7 @@
   "artifactType": "workflow",
   "utility": {
     "problem": "Build asynchronous people and post search requests with explicit idempotency.",
-    "output": "Documented LeadAdapter API results"
+    "output": "Authenticated LeadAdapter results, review reports and resumable research-to-CRM workflows"
   },
   "capabilityEvidence": {
     "local": {
@@ -37,7 +37,7 @@
           "name": "search_post",
           "level": "Tested",
           "evidenceRefs": [
-            "Standalone functional API/compiler contract tests"
+            "SDK/agent/workflow contract fixtures; no live provider execution"
           ],
           "method": "contract-fixture"
         },
@@ -45,13 +45,13 @@
           "name": "search_posts_post",
           "level": "Tested",
           "evidenceRefs": [
-            "Standalone functional API/compiler contract tests"
+            "SDK/agent/workflow contract fixtures; no live provider execution"
           ],
           "method": "contract-fixture"
         }
       ],
       "evidenceRefs": [
-        "Standalone functional API/compiler contract tests"
+        "SDK/agent/workflow contract fixtures; no live provider execution"
       ],
       "mode": "local"
     },
@@ -61,5 +61,8 @@
       "evidenceRefs": [],
       "mode": "managed"
     }
-  }
+  },
+  "agentReady": true,
+  "version": "0.2.0",
+  "executionAuthority": "leadadapter-api"
 }

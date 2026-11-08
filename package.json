@@ -1,0 +1,17 @@
+{
+  "name": "linkedin-search-api",
+  "version": "0.1.0",
+  "description": "Build asynchronous people and post search requests with explicit idempotency.",
+  "type": "module",
+  "private": false,
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "start": "node example.mjs"
+  },
+  "exports": "./lib/index.js",
+  "types": "./lib/index.d.ts"
+}

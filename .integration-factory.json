@@ -23,6 +23,45 @@
     "search_posts_post"
   ],
   "attributionSlug": "github-linkedin-search-api",
+  "qualityVersion": 2,
+  "artifactType": "workflow",
+  "utility": {
+    "problem": "Build asynchronous people and post search requests with explicit idempotency.",
+    "output": "Documented LeadAdapter API results"
+  },
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "search_post",
+          "level": "Tested",
+          "evidenceRefs": [
+            "Standalone functional API/compiler contract tests"
+          ],
+          "method": "contract-fixture"
+        },
+        {
+          "name": "search_posts_post",
+          "level": "Tested",
+          "evidenceRefs": [
+            "Standalone functional API/compiler contract tests"
+          ],
+          "method": "contract-fixture"
+        }
+      ],
+      "evidenceRefs": [
+        "Standalone functional API/compiler contract tests"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  },
   "factory": "leadadapter-pipmcp",
   "generatorVersion": 1
 }

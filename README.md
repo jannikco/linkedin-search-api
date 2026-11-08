@@ -22,7 +22,7 @@ Selected operation IDs: search_post, search_posts_post. Review integration.json 
 
 ## Managed service
 
-[Continue with LeadAdapter](https://leadadapter.com/register?utm_source=github&utm_campaign=github-linkedin-search-api). This repository is maintained by the integration team and does not imply endorsement by LinkedIn or other providers.
+[Continue with LeadAdapter](https://leadadapter.com/github/start?integration=linkedin-search-api&utm_source=github&utm_campaign=github-linkedin-search-api). This repository is maintained by the integration team and does not imply endorsement by LinkedIn or other providers.
 
 ## Provenance and support
 
